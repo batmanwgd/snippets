@@ -1,0 +1,24 @@
+{
+  "name": "gdocs-api",
+  "version": "0.0.1",
+  "description": "https://developers.google.com/docs/api/quickstart/nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [
+    "google",
+    "docs",
+    "api",
+    "google",
+    "developer",
+    "nodejs",
+    "npm"
+  ],
+  "author": "Kaska",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^39.2.0"
+  }
+}
