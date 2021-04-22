@@ -1,0 +1,44 @@
+{
+	"id": "5ba29bf9-768b-4b43-8200-3fdfbe72e962",
+	"values": [
+		{
+			"key": "urls",
+			"value": "https://gp-prd-us-east-1-terriamap-catalog.s3.amazonaws.com/geoplatform.json",
+			"enabled": true
+		},
+		{
+			"key": "expectedFilters",
+			"value": "{\n\t\"types\": [{\n\t\t\"@count\": 41916,\n\t\t\"@name\": \"dataset\",\n\t\t\"@label\": \"Dataset\"\n\t}, {\n        \"@count\": 17298,\n        \"@name\": \"service\",\n        \"@label\": \"Service\"\n    }],\n\t\"topicCats\": [{\n        \"@count\": 16504,\n        \"@name\": \"geoscientificInformation\",\n        \"@label\": \"Geoscientific information\"\n    }, {\n        \"@count\": 653,\n        \"@name\": \"boundaries\",\n        \"@label\": \"Boundaries\"\n    }, {\n        \"@count\": 12652,\n        \"@name\": \"environment\",\n        \"@label\": \"Environment\"\n    }, {\n\t\t\"@count\": 16761,\n\t\t\"@name\": \"oceans\",\n\t\t\"@label\": \"Oceans\"\n\t}, {\n        \"@count\": 7956,\n        \"@name\": \"climatologyMeteorologyAtmosphere\",\n        \"@label\": \"Climatology, meteorology, atmosphere\"\n    }],\n    \"orgNames\": [{\n        \"@count\": 5341,\n        \"@name\": \"Axiom Data Science\",\n        \"@label\": \"Axiom Data Science\"\n    }, {\n        \"@count\": 4994,\n        \"@name\": \"DOC/NOAA/NESDIS/NCEI > National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce\",\n        \"@label\": \"DOC/NOAA/NESDIS/NCEI > National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce\"\n    }, {\n        \"@count\": 3714,\n        \"@name\": \"U.S. Geological Survey\",\n        \"@label\": \"U.S. Geological Survey\"\n    }, {\n        \"@count\": 3572,\n        \"@name\": \"NOAA National Centers for Environmental Information\",\n        \"@label\": \"NOAA National Centers for Environmental Information\"\n    }, {\n        \"@count\": 3508,\n        \"@name\": \"GCOOS\",\n        \"@label\": \"GCOOS\"\n    }],\n    \"formats\": [{\n        \"@count\": 2139,\n        \"@name\": \"ASCII\",\n        \"@label\": \"ASCII\"\n    }, {\n        \"@count\": 949,\n        \"@name\": \"CSV\",\n        \"@label\": \"CSV\"\n    }, {\n        \"@count\": 1667,\n        \"@name\": \"ESRI Layer Package (LPK)\",\n        \"@label\": \"ESRI Layer Package (LPK)\"\n    }, {\n        \"@count\": 830,\n        \"@name\": \"PDF\",\n        \"@label\": \"PDF\"\n    }, {\n        \"@count\": 642,\n        \"@name\": \"Zip\",\n        \"@label\": \"Zip\"\n    }],\n    \"status\": [{\n        \"@count\": 22637,\n        \"@name\": \"completed\",\n        \"@label\": \"Completed\"\n    }, {\n        \"@count\": 2910,\n        \"@name\": \"onGoing\",\n        \"@label\": \"On going\"\n    }, {\n        \"@count\": 1653,\n        \"@name\": \"underDevelopment\",\n        \"@label\": \"Under development\"\n    }, {\n        \"@count\": 157,\n        \"@name\": \"pending\",\n        \"@label\": \"pending\"\n    }, {\n        \"@count\": 116,\n        \"@name\": \"UNKNOWN\",\n        \"@label\": \"UNKNOWN\"\n    }, {\n        \"@count\": 96,\n        \"@name\": \"planned\",\n        \"@label\": \"Planned\"\n    }, {\n        \"@count\": 24,\n        \"@name\": \"UNDER REVIEW\",\n        \"@label\": \"UNDER REVIEW\"\n    }]\n}",
+			"enabled": true
+		},
+		{
+			"key": "base_url",
+			"value": "https://terriamap.geoplatform.gov/",
+			"enabled": true
+		},
+		{
+			"key": "image_url",
+			"value": "https://geonetwork.geoplatform.gov/geonetwork/srv/eng/q?_content_type=json&bucket=s101&facet.q=&fast=index&from=1&resultType=details&sortBy=relevance&sortOrder=&to=20",
+			"enabled": true
+		},
+		{
+			"key": "geonetwork",
+			"value": "https://geonetwork.geoplatform.gov/geonetwork/srv/eng/qi?_content_type=json&summaryOnly=true",
+			"enabled": true
+		},
+		{
+			"key": "max",
+			"value": "42833",
+			"enabled": true
+		},
+		{
+			"key": "url",
+			"value": "https://geonetwork.geoplatform.gov/geonetwork/srv/eng/q?_content_type=json&bucket=s101&facet.q=&fast=index&from=",
+			"enabled": true
+		}
+	],
+	"name": "Production Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2021-03-28T17:32:48.247Z",
+	"_postman_exported_using": "Postman/8.0.9"
+}

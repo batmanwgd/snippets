@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "fb99d552-54e8-450f-906f-3c9f92299466",
+		"name": "GeoPlatform GeoNetwork Validations",
+		"description": "Used to test various aspects of the installation for GeoPlatform.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check name & label",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let dataJ = JSON.parse(responseBody);\r",
+							"\r",
+							"pm.test(\"Object name and Label present under Type as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].types\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"types : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under TopicCats as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].topicCats;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"topicCats : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under Keywords as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].keywords;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"keywords : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under OrgNames as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].orgNames;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"orgNames : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under CreateDateYears as expected\", () => {\r",
+							"    for (let i = 0;i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].createDateYears;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"createDateYears : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under Formats as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].formats;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"formats : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under SpatialRepresentationTypes as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].spatialRepresentationTypes;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"spatialRepresentationTypes : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under MaintenanceAndUpdateFrequencies as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].maintenanceAndUpdateFrequencies;\r",
+							"        for (let j = 0 ; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"maintenanceAndUpdateFrequencies : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under Status as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].status;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"status : \", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under ServiceTypes as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"       let v = dataJ[i].serviceTypes;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"serviceTypes:\", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Object Name and Label present under Denominators as expected\", () => {\r",
+							"    for (let i = 0; i < dataJ.length; i++) {\r",
+							"        let v = dataJ[i].denominators;\r",
+							"        for (let j = 0; j < v.length; j++) {\r",
+							"            pm.expect(v[j]).to.have.any.keys('@name');\r",
+							"            pm.expect(v[j]).to.have.any.keys('@label');\r",
+							"            console.log(\"denominators:\", v[j]);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{geonetwork}}",
+					"host": [
+						"{{geonetwork}}"
+					],
+					"query": [
+						{
+							"key": "typeOnly",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Count",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"data = JSON.parse(responseBody);\r",
+							"const expectedFilters = JSON.parse(postman.getEnvironmentVariable(\"expectedFilters\"));\r",
+							"findRecords = (inputArray, filterObj) => {\r",
+							"    return inputArray.filter((item) => {\r",
+							"        return (item[\"@name\"] === filterObj[\"@name\"]);\r",
+							"    });\r",
+							"}\r",
+							"for (let key in expectedFilters) {\r",
+							"    for (let j = 0; j < expectedFilters[key].length; j++) {\r",
+							"        pm.test(`Validate Count: ${key}::${expectedFilters[key][j][\"@label\"]}`, () => {\r",
+							"            let match = findRecords(data[0][key], expectedFilters[key][j]);\r",
+							"            pm.expect(match).to.not.be.empty;\r",
+							"            console.log(key + \" \" + expectedFilters[key][j][\"@name\"] + \" GTE:\", Number.parseInt(match[0][\"@count\"]), expectedFilters[key][j][\"@count\"]);\r",
+							"            pm.expect(Number.parseInt(match[0][\"@count\"])).to.be.gte(expectedFilters[key][j][\"@count\"]);\r",
+							"        });\r",
+							"    }\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{geonetwork}}",
+					"host": [
+						"{{geonetwork}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
